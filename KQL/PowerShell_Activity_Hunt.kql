@@ -1,0 +1,4 @@
+DeviceProcessEvents
+| where FileName =~ "powershell.exe"
+| project Timestamp, DeviceName, FileName, ProcessCommandLine
+| take 50
