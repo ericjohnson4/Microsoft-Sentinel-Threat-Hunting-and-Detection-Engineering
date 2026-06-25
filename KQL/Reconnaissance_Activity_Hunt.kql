@@ -1,0 +1,4 @@
+DeviceProcessEvents
+| where FileName in~ ("whoami.exe","ipconfig.exe","nslookup.exe","net1.exe","hostname.exe")
+| project Timestamp, DeviceName, FileName, ProcessCommandLine
+| order by Timestamp desc
