@@ -1,0 +1,4 @@
+DeviceRegistryEvents
+| where ActionType in ("RegistryKeyCreated","RegistryValueSet")
+| project Timestamp, DeviceName, ActionType, RegistryKey, RegistryValueName
+| take 50
