@@ -1,0 +1,3 @@
+DeviceInfo
+| project Timestamp, DeviceName, OSPlatform, OnboardingStatus, SensorHealthState
+| order by Timestamp desc
