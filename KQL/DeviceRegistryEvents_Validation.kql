@@ -1,0 +1,3 @@
+DeviceRegistryEvents
+| project Timestamp, DeviceName, ActionType, RegistryKey, RegistryValueName
+| take 50
